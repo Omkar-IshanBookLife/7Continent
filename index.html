@@ -32,7 +32,7 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">The 7 Continents of the World</h1>
             <p class="mb-8 leading-relaxed">A continent is a large continuous mass of land conventionally regarded as a collective region. There are seven continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia (listed from largest to smallest in size). Sometimes Europe and Asia are considered one continent called Eurasia.</p>
             <div class="flex justify-center">
-              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Learn More</button>
+              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg" id="learnMoreBtn">Learn More</button>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
         <div class="container px-5 py-24 mx-auto">
           <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
             <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">To Learn More About Continent and several of their weird and fun facts, visit the continents page.</h1>
-            <button class="flex-shrink-0 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg mt-10 sm:mt-0">Learn More</button>
+            <button class="flex-shrink-0 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg mt-10 sm:mt-0" id='learnMoreBtn1' >Learn More</button>
           </div>
         </div>
       </section>
@@ -182,5 +182,17 @@
           </span>
         </div>
       </footer>
+      <script>
+	var btn = document.getElementById('learnMoreBtn');
+	btn.onclick = function(){
+	   console.log('Hello World');
+	   window.open('continent.html');
+	}
+  var btn1 = document.getElementById('learnMoreBtn1');
+	btn1.onclick = function(){
+	   console.log('Hello World');
+	   window.open('continent.html');
+	}
+      </script>
 </body>
 </html>
